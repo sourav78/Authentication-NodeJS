@@ -6,7 +6,7 @@ const jwtAuth = (req, res, next) => {
     if (!token) {
         return res.status(400).json({
             success: false,
-            msg: "Not Authorized"
+            msg: "Not Authorizeddd"
         })
     }
 
