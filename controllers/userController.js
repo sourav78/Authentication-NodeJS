@@ -77,7 +77,7 @@ const signin = async (req, res) => {
     } catch (error) {
         return res.status(400).json({
             success: false,
-            msg: error.message,
+            msg: error,
             at: "signin"
         })
     }
