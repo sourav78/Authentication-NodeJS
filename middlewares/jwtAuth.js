@@ -16,7 +16,8 @@ const jwtAuth = (req, res, next) => {
     } catch (error) {
         return res.status(400).json({
             success: false,
-            msg: error.message
+            msg: error.message,
+            at: "jwt auth"
         })
     }
 
